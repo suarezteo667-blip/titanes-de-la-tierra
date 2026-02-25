@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Martina 💚</title>
+  <style>
+    :root {
+      --verde: #01854a;
+      --verde-oscuro: #006838;
+      --blanco: #ffffff;
+      --rosa: #ffdce7;
+      --texto: #243428;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at 20% 20%, #fff6fa 0%, #f6fff8 45%, #e7f8ef 100%);
+      color: var(--texto);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      width: min(920px, 100%);
+      background: rgba(255, 255, 255, 0.95);
+      border: 3px solid #d9f4e4;
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(0, 80, 46, 0.15);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .banner {
+      background: linear-gradient(130deg, var(--verde) 0%, #00a35a 60%, #23b874 100%);
+      color: var(--blanco);
+      padding: 1.5rem 2rem 2.2rem;
+      position: relative;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      letter-spacing: 0.6px;
+      margin-bottom: 0.35rem;
+    }
+
+    .banner p {
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    .shield {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      width: 82px;
+      filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.25));
+    }
+
+    .content {
+      padding: 2rem;
+      display: grid;
+      gap: 1.6rem;
+    }
+
+    .love-text {
+      line-height: 1.75;
+      font-size: clamp(1.05rem, 2.4vw, 1.24rem);
+      text-align: center;
+      background: #f8fff9;
+      border: 2px dashed #bde8ce;
+      border-radius: 20px;
+      padding: 1.4rem;
+    }
+
+    .love-text strong {
+      color: var(--verde-oscuro);
+    }
+
+    .final {
+      text-align: center;
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 700;
+      color: #d81b60;
+      background: linear-gradient(90deg, #ffe4ef, #fff0f6);
+      border-radius: 16px;
+      padding: 1rem;
+      border: 2px solid #ffc8df;
+    }
+
+    .friends {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .pet-box,
+    .gift-box {
+      background: #fff;
+      border-radius: 18px;
+      border: 2px solid #e4f4eb;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .emoji {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .pet-box h3,
+    .gift-box h3 {
+      margin-bottom: 0.4rem;
+      color: var(--verde-oscuro);
+    }
+
+    .hearts {
+      position: absolute;
+      inset: auto 0 12px;
+      text-align: center;
+      font-size: 1.1rem;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    @media (max-width: 600px) {
+      .banner {
+        padding-top: 2rem;
+      }
+      .shield {
+        width: 66px;
+        top: 10px;
+        right: 10px;
+      }
+      .content {
+        padding: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <header class="banner">
+      <svg class="shield" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" aria-label="Escudo inspirado en Nacional">
+        <path d="M60 6 L108 24 V68 C108 100 89 122 60 134 C31 122 12 100 12 68 V24 Z" fill="#ffffff" stroke="#0f5c35" stroke-width="6"/>
+        <path d="M60 10 L104 27 V66 C104 97 86 117 60 128 C34 117 16 97 16 66 V27 Z" fill="#0a8f4d"/>
+        <path d="M28 36 H92 V52 H28 Z" fill="#ffffff"/>
+        <text x="60" y="49" text-anchor="middle" font-size="20" font-weight="700" fill="#0a8f4d" font-family="Arial">CN</text>
+        <circle cx="60" cy="82" r="20" fill="#ffffff"/>
+        <text x="60" y="88" text-anchor="middle" font-size="18" font-weight="700" fill="#0a8f4d" font-family="Arial">💚</text>
+      </svg>
+      <h1>Martina, esto es para vos</h1>
+      <p>Una página hecha con ternura, dedicación y muchísimo amor.</p>
+    </header>
+
+    <section class="content">
+      <p class="love-text">
+        Desde hace tiempo quería animarme a decirte todo esto. Sos una persona increíble,
+        de esas que iluminan los días con una sonrisa.
+        Pensé en vos y en todo lo que te representa: tu amor por <strong>Nacional</strong>,
+        tu caniche hermoso 🐩 y ese osito blanco 🧸 que te regalé con todo mi cariño.
+        Cada detalle de esta página está hecho pensando en vos, Martina.
+      </p>
+
+      <div class="friends">
+        <article class="pet-box">
+          <span class="emoji" aria-hidden="true">🐩</span>
+          <h3>Tu caniche</h3>
+          <p>Tan tierno como vos, siempre presente en tus historias y en mi corazón.</p>
+        </article>
+
+        <article class="gift-box">
+          <span class="emoji" aria-hidden="true">🧸</span>
+          <h3>El osito blanco</h3>
+          <p>El primer regalo que te di, pequeño, pero lleno de amor sincero.</p>
+        </article>
+      </div>
+
+      <p class="final">Aunque sea tarde, te lo tenía que decir: <br />me gustas 💗</p>
+    </section>
+
+    <div class="hearts">💚 🤍 💚 🤍 💚</div>
+  </main>
+</body>
+</html>
